@@ -1,0 +1,36 @@
+.featured {
+    width:100%;
+    padding: 8rem 0;
+    background-color: var(--background);
+    clip-path: polygon(0 0, 100% 28%, 100% 100%, 0 69%);
+}
+
+.featured .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 1rem;
+}
+
+.featured .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.featured .left p {
+    margin: 1.3rem 0;
+}
+
+.featured .left .btn {
+    align-self: flex-start;
+}
+
+.green {
+    color: #118c41;
+}
+
+.red {
+    color: #ff0000;
+}
