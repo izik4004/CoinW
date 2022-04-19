@@ -31,7 +31,7 @@ const More = () => {
         <Navbar />
             <div className="container">
             <div className="crypto_header">
-                 <h2>Crypto Currencies</h2>
+                 <h2>Crypto Currencies </h2>
                  <p>Live update for different crypto currencies</p>
             </div>
              
