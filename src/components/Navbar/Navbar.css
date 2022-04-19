@@ -25,7 +25,7 @@
     display:flex
 }
 
-.nav-menu li {
+.nav-menu  {
     padding: 0 1rem;
 }
 
@@ -39,6 +39,7 @@
     display: none;
     cursor: pointer;
 }
+
 
 @media screen and (max-width:1240px) { 
     .hamburger {

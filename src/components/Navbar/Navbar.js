@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
+import {NavLink} from 'react-router-dom';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -12,11 +13,21 @@ const Navbar = () => {
         <h1>
           C<span className="primary">W</span>
         </h1>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
+        <div className={click ? "nav-menu active" : "nav-menu"}>
+          <NavLink
+          className='nav-menu'
+          to='/'
+          >
+            Home
+          </NavLink>
+          
+          <NavLink
+          className='nav-menu'
+          to='/more'
+          >
+            More
+          </NavLink>
+          {/* <li>
             <a href="/">Featured</a>
           </li>
           <li>
@@ -24,10 +35,10 @@ const Navbar = () => {
           </li>
           <li>
             <a href="/">Contact</a>
-          </li>
-        </ul>
+          </li> */}
+        </div>
         <div className="btn-group">
-          <button className="btn">Connect Wallet</button>
+          <button className="btn">Link Wallet</button>
         </div>
         <div className="hamburger" onClick={handleClick}>
           {click ? (

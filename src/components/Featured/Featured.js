@@ -2,6 +2,7 @@ import axios from "axios";
 import "./Featured.css";
 import React, { useState, useEffect } from "react";
 import Coincard from "../Coincard";
+import {Link} from 'react-router-dom'
 
 const Featured = () => {
   const [data, setData] = useState(null);
@@ -29,7 +30,10 @@ const Featured = () => {
         <div className="left">
           <h2>Explore Top Crypto's Like Bitcoin, Ethereum and Dogecoin</h2>
           <p>See all available assets: Cryptocurrencies and NFT's</p>
-          <button className="btn">See More Coins</button>
+          
+          <Link to="/more">
+             <button className="btn">See More Coins</button>
+          </Link>
         </div>
 
         {/* right */}
